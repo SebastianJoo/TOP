@@ -65,7 +65,7 @@ namespace TOP
                     {
                         person.IncreasePrisonTime();
                         Console.SetCursorPosition(60, 27);
-                        Console.WriteLine($"A thief has been in jail for {person.GetPrisonTimer()}");
+                        Console.WriteLine($"A thief has been in prison for {person.GetPrisonTimer()}");
 
                     }
                     else
@@ -74,7 +74,7 @@ namespace TOP
                         outOfPrison.Add(person);
                         person.ResetPrisonTime();
                         Console.SetCursorPosition(60, 28);
-                        Console.Write("A thief is released from jail.");
+                        Console.Write("A thief is released from prison.");
                         Thread.Sleep(2000);
                     }
                 }
